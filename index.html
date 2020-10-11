@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eee;
+    }
+
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    nav {
+      min-height: 50px;
+      border-bottom: 1px solid #eee;
+      background-color: #fff;
+    }
+
+    nav .title {
+      display: inline-block;
+      text-decoration: none;
+      color: #4a3;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 8px 0;
+    }
+
+    nav ul {
+      display: inline-block;
+      margin: 0;
+      margin-left: 10px;
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      text-decoration: unset;
+      color: #444;
+      padding: 4px 8px;
+    }
+    nav ul li a:hover {
+      color: #aaa;
+    }
+
+    main {
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .banner {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      float: left;
+    }
+
+    .banner h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+      font-weight: normal;
+      font-size: 41px;
+    }
+
+    .content {
+      min-height: 100px;
+      float: left;
+      width: 65%;
+    }
+
+    .content h2 {
+      margin: 20px;
+      margin-bottom: 0;
+      font-weight: normal;
+      font-size: 18px;
+      background-color: #4a3;
+      display: inline-block;
+      padding: 5px 15px;
+      color: #fff;
+    }
+
+    .content section {
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .content section .preview {
+      width: 40%;
+      float: left;
+    }
+    
+    .content section .preview img {
+      width: 100%;
+    }
+    
+    .content section .detail {
+      width: 60%;
+      float: left;
+      padding: 0 10px;
+    }
+
+    .content section .detail h3 {
+      font-weight: normal;
+      font-size: 20px;
+      padding: 5px 0;
+    }
+
+    .content section .detail small {
+      color: #666;
+    }
+
+    .sidebar {
+      min-height: 100px;
+      float: left;
+      width: 35%;
+      padding-bottom: 20px;
+    }
+
+    .sidebar h4 {
+      border-bottom: 1px solid #aaa;
+      margin: 16px;
+      padding: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .sidebar ul li {
+      padding: 4px 8px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: unset;
+      color: #777;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .sidebar p {
+      padding-left: 30px;
+      margin-bottom: 8px;
+      color: #777;
+    }
+
+    .sidebar ul li a small {
+      color: #fff;
+      background-color: #999;
+      padding: 2px 4px;
+      border-radius: 50%;
+      margin-left: 4px;
+      font-size: 10px;
+    }
+
+    footer {
+      padding: 5px 15px;
+      text-align: center;
+      color: #fff;
+      background-color: #555;
+    }
+    
+    footer a {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        width: 100%;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a class="title" href="#">Wiskul</a>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Masakan</a></li>
+        <li><a href="#">Tempat Wisata</a></li>
+        <li><a href="#">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <main>
+      <div class="banner">
+        <h1>7 Tempat Wisata Kuliner Jogja Murah Meriah</h1>
+        <img src="banner.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <h2>Terbaru</h2>
+        </div>
+
+        <section>
+          <div class="preview">
+            <img src="toge.jpg" alt="">
+          </div>
+          <div class="detail">
+            <h3>Beberapa Masakan yang berbahan dasar Toge</h3>
+            <small>Jumat, 12 Juni 2020 - 12:15 PM</small>
+            <p></p>
+          </div>
+        </section>
+
+        <section>
+          <div class="preview">
+            <img src="tumis.jpg" alt="">
+          </div>
+          <div class="detail">
+            <h3>Masakan yang mudah dibuat saat keadan dirumah</h3>
+            <small>Senin, 1 Juni 2020 - 4:36 PM</small>
+            <p></p>
+          </div>
+        </section>
+
+        <section>
+          <div class="preview">
+            <img src="nusantara.jpg" alt="">
+          </div>
+          <div class="detail">
+            <h3>Resep Masakan Nusantara Ini Bisa Bikin Kamu Ketagihan</h3>
+            <small>Senin, 18 Mei 2020 - 2:47 PM</small>
+            <p></p>
+          </div>
+        </section>
+
+      </div>
+      <div class="sidebar">
+        <h4>Kategori</h4>
+        <ul>
+          <li><a href="#">Berkuah<small>12</small></a></li>
+          <li><a href="#">Goreng-Goreng<small>23</small></a></li>
+          <li><a href="#">Bebakaran<small>20</small></a></li>
+        </ul>
+        <h4>Hubungi Kami</h4>
+        <p>WA: +085 xx xxxx-xxxx</p>
+        <p>Telp: +0822 xxxx-xxxx</p>
+        <p>Fb: <a href="http://fb.me/devii.devii.54584">Devi Rashad</a></p>
+      </div>
+    </main>
+    <main>
+      <footer>
+        <p>Hak Cipta dilindungi oleh undang-undang &copy; <a href="http://fb.me/devii.devii.54584">Devi Rashad</a> - 2020 </p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
